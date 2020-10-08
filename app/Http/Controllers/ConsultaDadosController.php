@@ -1,14 +1,17 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Municipio;
 
 class ConsultaDadosController extends Controller
 {
-    public function index(Request $request){
+    public function index(){
+        return view('index');
+    }
+
+    public function consultar(Request $request){
         $dados = [
             'regiao' => $request->regiao,
             'estado' => $request->estado,

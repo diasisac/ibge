@@ -18,5 +18,4 @@ Route::group(['namespace' => 'App\Http\Controllers\Api', 'as' => 'api.'], functi
     Route::get('/estado', 'EstadoController@index');
     Route::get('/municipio', 'MunicipioController@index');
     Route::get('/regiao', 'RegiaoController@index');
-    Route::get('/consultar', 'ConsultaDadosController@index');
 });

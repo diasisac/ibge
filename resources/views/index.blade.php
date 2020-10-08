@@ -12,12 +12,21 @@
 </head>
 <body style="margin: 15px">
 <div class="row" style="display: flex;justify-content: center; margin:15px 15px 36px 15px">
-    <div style="background:#e8e8e8; height:180px; border-radius: 10px; width: 100%;">
+<div style="background:#e8e8e8; height:200px; border-radius: 10px; width: 100%; display:flex; align-items: center;">
+    <div class="col-lg-12" style="padding:0px;height:50px;">
+        <ul style="list-style: none">
+            <li class="col-lg-3" style="padding:0px;font-size: 27px;display: inline-flex;">
+                <span style="font-family: revert;color: #ce2121;font-weight: bold;">mobile</span><span style="color:#0391bb;"><em>saúde</em></span>
+            </li>
+            <li class="col-lg-3  col-xs-1" style="display: inline-flex;float: right;padding: 0px;"><span>https://sidra.ibge.gov.br/territorio</span></li>
+            <li style="font-family: sans-serif;">Busca Município IBGE/SIDRA</li>
+        </ul>
+    </div>
 </div>
 </div>
 <div class="container" style="margin-right:0px ">
 
-    <form action="<?= url('/api/consultar')?>" method="GET">
+    <form action="<?= url('/consultar')?>" method="GET">
     <div class="form-group row">
       <label for="regiao" class="col-sm-1 col-form-label"><strong>Região</strong></label>
       <div class="col-sm-11">
@@ -55,9 +64,18 @@
 </div>
     </div>
   </form>
-  @if(count($municipios) > 0)
+  @if(empty($municipios))
+    <?php $municipio = null; ?>
+  @else
+
+
   <div class="container" style="margin-right:0px ">
-  <div class="container py-2">
+    <div class="py-2" style="display: flex;justify-content: flex-end;">
+        <div class="col-lg-11" style="padding: 0px">
+        <h2>{{$text = count($municipios) > 1 ? count($municipios).' municípios encontrados' : count($municipios). ' município encontrado' }} </h2>
+        </div>
+    </div>
+    <div class="container py-2">
     <div class="row "style="display: flex;justify-content: flex-end;">
        <table class="table col-lg-11 table" >
   <thead>
@@ -65,7 +83,7 @@
   <tbody>
       @foreach ($municipios as $mun)
       <tr>
-        <td> <a href="https://sidra.ibge.gov.br/territorio#/N6/{{$mun['codigo']}}" target="_blank"><?= $mun['nome']. ' - ' . $mun['codigo'] ?></a></td>
+        <td> <a href="https://sidra.ibge.gov.br/territorio#/N6/{{$mun['codigo']}}" target="_blank"><?= $mun['nome']. ' - Código: '. $mun['codigo'] ?></a></td>
       </tr>
       @endforeach
 
@@ -73,8 +91,12 @@
 </table>
     </div>
 </div>
+
   </div>
   @endif
+  <footer>
+    <small style="font-family: sans-serif;">&copy; 2020 - Mobile Saúde</small>
+   </footer>
 <style>
     .table td, .table th {
     padding: .75rem;
