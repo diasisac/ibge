@@ -51,6 +51,13 @@ no terminal do vscode ou cmd do windowns.</li>
 <li>Com a instalação das depêndencias concluída podemos acessar a aplicação com a seguinte url</li> <code>http://localhost/desafio_mobile_saude/ibge/public/</code>
 </ol>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
+<ul>
+<li>DATABASE=ibge</li>
+<li>USERNAME=root</li>
+<li>PASSWORD=</li>
+</ul>
+
+<p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
 <ol>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
@@ -59,8 +66,5 @@ no terminal do vscode ou cmd do windowns.</li>
 
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação</h3></p>
 <ol>
-<li>É necessário selecionar uma região para que o select de estados se montado.</li>
-<li></li>
-<li></li>
-<li></li>
+<li>Os campos região e estado são obrigatórios para obter uma busca precisa.</li>
 </ol>
