@@ -53,6 +53,15 @@ no terminal do vscode ou cmd do windowns.</li>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
 <ol>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
+    <ul>
+        <h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Parâmetros</h3>
+      <li>
+          id
+      </li>
+      <li>
+          codigo
+      </li>
+    </ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
 </ol>
