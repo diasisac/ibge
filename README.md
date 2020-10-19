@@ -64,9 +64,11 @@ no terminal do vscode ou cmd do windowns.</li>
 <ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
     <ul>
-        Parâmetros
-        <li>id</li>
-        <li>nome</li>
+        <li>Parâmetros</li>
+        <ul>
+            <li>id</li>
+            <li>nome</li>
+        </ul>
     </ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
