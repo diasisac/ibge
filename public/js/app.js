@@ -24,11 +24,8 @@ $.ajax({
     dataType: 'json',
     type: 'GET',
     success: function (data){
-        $('select#regiao').empty();
         data.data.map(data => {
-        if(data.nome !='temp')
             $('select#regiao').append('<option value="'+data.id+'" rel="'+data.nome+'"  >'+ data.nome +'</option>')
-            $("select#regiao option[value="+regiao+"]").attr("selected", "selected");
         });
     }
 });
@@ -44,8 +41,9 @@ $('#regiao').on('change', function() {
         type: 'GET',
         success: function (data){
             $('select#estado').empty();
+            $('select#estado').append('<option value="" rel="">Selecione</option>');
+
             data.data.map(data => {
-                $("select#estado option[value="+estado+"]").attr("selected", "selected");
                 $('select#estado').append('<option value="'+data.uf+'" rel="'+data.id+'"  >'+ data.nome +'</option>');
             });
         }
