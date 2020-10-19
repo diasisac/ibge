@@ -62,12 +62,13 @@ no terminal do vscode ou cmd do windowns.</li>
  </ul>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
 <ul>
-  <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
-<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></p></li>
-<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></p></li>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
 <ul>
 
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação</h3></p>
-<ol>
-<li>Os campos região e estado são obrigatórios para obter uma busca precisa.</li>
-</ol>
+<ul>
+<li>O campo região precisa ser selecionado para que o select de estados seja montado dinamicamente</li>
+<li>Para efetuar a busca o select de região e estado precisam ser preenchidos</li>
+<ul>
