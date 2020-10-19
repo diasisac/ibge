@@ -53,6 +53,12 @@ no terminal do vscode ou cmd do windowns.</li>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Configurações do banco<g-emoji class="g-emoji" alias="wrench" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png">🔧</g-emoji></p></h3></p>
 <ul>
     <li>
+        DATABASE=ibge 
+    </li>
+    <li>
+        USERNAME=root 
+    </li>
+    <li>
         Charset=utf8mb4 
     </li>
     <li>
