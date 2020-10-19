@@ -46,5 +46,5 @@
 <ol>
 <li>Realizar a instalação de um servidor web WAMP ou XAMPP, se preferir pode ser utilizado o próprio servidor do PHP</li>
 <li>Criar uma pasta chamada desafio_mobile_saude e clonar este repositório dentro dessa pasta</li>
-<li>Após a clonagem do repositório, é necessário instalar as dependências do projeto e para isso podemos prosseguir com comando composer install no terminal do vscode ou cmd do windowns</li>
+<li>Após a clonagem do repositório, é necessário instalar as dependências do projeto e para isso podemos prosseguir com comando <code>composer install</code>no terminal do vscode ou cmd do windowns</li>
 </ol>
