@@ -44,7 +44,8 @@
 <h1 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Parte do desenvolvedor</h1> 
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Instalação do Projeto</h3></p>
 <ol>
-<li>Realizar a instalação de um servidor web WAMP ou XAMPP, se preferir pode ser utilizado o próprio servidor do PHP</li>
-<li>Criar uma pasta chamada desafio_mobile_saude e clonar este repositório dentro dessa pasta</li>
-<li>Após a clonagem do repositório, é necessário instalar as dependências do projeto e para isso podemos prosseguir com comando <code>composer install</code>no terminal do vscode ou cmd do windowns</li>
+<li>Realizar a instalação de um servidor web WAMP ou XAMPP, se preferir pode ser utilizado o próprio servidor do PHP.</li>
+<li>Criar uma pasta chamada desafio_mobile_saude e clonar este repositório dentro dessa pasta.</li>
+<li>Após a clonagem do repositório, é necessário instalar as dependências do projeto e para isso podemos prosseguir com comando <code>composer install</code>
+no terminal do vscode ou cmd do windowns.</li>
 </ol>
