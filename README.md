@@ -93,7 +93,7 @@ no terminal do vscode ou cmd do windowns.</li>
     </ul>
 </ul>
     
-<p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação</h3><g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji></p>
+<p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação<g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji></p></h3>
 <ul>
 <li>O campo região precisa ser selecionado primeiro para que o select de estados seja montado dinamicamente.</li>
 <li>Para efetuar a busca o select de região e estado precisam ser preenchidos.</li>
