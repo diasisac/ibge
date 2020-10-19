@@ -51,18 +51,15 @@ no terminal do vscode ou cmd do windowns.</li>
 <li>Com a instalação das depêndencias concluída podemos acessar a aplicação com a seguinte url</li> <code>http://localhost/desafio_mobile_saude/ibge/public/</code>
 </ol>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Configurações do banco</h3></p>
-<code>
 <ul>
     <li>
-<span>DATABASE=ibge</span>
-<span>USERNAME=root</span>
-<span>PASSWORD=</span>
+        Charset=utf8mb4 
     </li>
+    
     <li>
-        <span>charset=UTF8 generalci</span>
+        Collation=utf8mb4_general_ci 
     </li>
-</ul
-</code>
+ </ul>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
 <ul>
 <p><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></p>
