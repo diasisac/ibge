@@ -41,7 +41,7 @@
 <hr>
 <p><img alt="mobilesaude.com.br" src="https://www.mobilesaude.com.br/challenge/logo-mobilesaude-cor.png"></p>
 <hr>
-<h1 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Instruções do projeto e Parte do desenvolvedor</h1> 
+<h1 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Parte do desenvolvedor</h1> 
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Instalação do Projeto</h3></p>
 <ol>
 <li>Realizar a instalação de um servidor web WAMP ou XAMPP, se preferir pode ser utilizado o próprio servidor do PHP</li>
