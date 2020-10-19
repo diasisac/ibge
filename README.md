@@ -50,6 +50,7 @@
 no terminal do vscode ou cmd do windowns.</li>
 <li>Com a instalação das depêndencias concluída podemos acessar a aplicação com a seguinte url</li> <code>http://localhost/desafio_mobile_saude/ibge/public/</code>
 </ol>
+<hr>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Configurações do banco<g-emoji class="g-emoji" alias="wrench" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png">🔧</g-emoji></p></h3></p>
 <ul>
     <li>
@@ -66,6 +67,7 @@ no terminal do vscode ou cmd do windowns.</li>
     </li>
         
  </ul>
+ <hr>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
 <ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
@@ -98,9 +100,10 @@ no terminal do vscode ou cmd do windowns.</li>
         </ul>
     </ul>
 </ul>
-    
+<hr>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação<g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji></p></h3>
 <ul>
 <li>O campo região precisa ser selecionado primeiro para que o select de estados seja montado dinamicamente.</li>
 <li>Para efetuar a busca o select de região e estado precisam ser preenchidos.</li>
 </ul>
+<hr>
