@@ -50,9 +50,16 @@
 no terminal do vscode ou cmd do windowns.</li>
 <li>Com a instalação das depêndencias concluída podemos acessar a aplicação com a seguinte url</li> <code>http://localhost/desafio_mobile_saude/ibge/public/</code>
 </ol>
+<p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
+<ol>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
+</ol>
+
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação</h3></p>
 <ol>
-<li>É necessário selecionar uma região para que o select de estados se montado</li>
+<li>É necessário selecionar uma região para que o select de estados se montado.</li>
 <li></li>
 <li></li>
 <li></li>
