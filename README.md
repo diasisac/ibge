@@ -55,10 +55,10 @@ no terminal do vscode ou cmd do windowns.</li>
     <li>
         Charset=utf8mb4 
     </li>
-    
     <li>
         Collation=utf8mb4_general_ci 
     </li>
+        
  </ul>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
 <ul>
