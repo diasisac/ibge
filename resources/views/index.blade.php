@@ -5,41 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IBGE</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="<?= asset('css/app.css'); ?>">
+  <link rel="stylesheet" href="<?= asset('css/app.css'); ?>">
 </head>
-<body style="margin: 15px">
-<div class="row" style="display: flex;justify-content: center; margin:15px 15px 36px 15px">
-    <div style="background:#e8e8e8; height:200px; border-radius: 10px; width: 100%; display:flex; align-items: center;">
-        <div class="col-lg-12" style="padding:0px;height:50px;">
-            <ul style="list-style: none">
-                <li class="col-lg-3" style="padding:0px;font-size: 27px;display: inline-flex;">
-                    <span style="font-family: revert;color: #ce2121;font-weight: bold;">mobile</span><span style="color:#0391bb;"><em>saúde</em></span>
+
+<body>
+<div class="row r1">
+    <div id="d1-r1">
+        <div class="col-lg-12" id="d2-r1">
+            <ul>
+                <li class="col-lg-3" id="l1-d2">
+                    <span id="s1-d2">mobile</span><span id="s2-d2"><em>saúde</em></span>
                 </li>
-                <li class="col-lg-3  col-xs-1" style="display: inline-flex;float: right;padding: 0px;"><span>https://sidra.ibge.gov.br/territorio</span></li>
-                <li style="font-family: sans-serif;">Busca Município IBGE/SIDRA</li>
+                <li class="col-lg-3  col-xs-1" id="l2-d2" ><span>https://sidra.ibge.gov.br/territorio</span></li>
+                <li id="l3-d2">Busca Município IBGE/SIDRA</li>
             </ul>
         </div>
     </div>
 </div>
-
-<div class="container" style="margin-right:0px ">
-    <form action="<?= url('/consultar')?>" method="GET">
+<div id="conteudo">
+<div class="container">
+    <form action="<?= url('/consultar')?>" method="GET" autocomplete="on">
     <div class="form-group row">
       <label for="regiao" class="col-sm-1 col-form-label"><strong>Região</strong></label>
       <div class="col-sm-11">
         <select name="regiao" id="regiao" class="form-control ">
-            <option value="" rel="">Selecione</option>
         </select>
       </div>
     </div>
 </div>
 
-<hr  style="border: 1px solid; color: #e8e8e8">
+<hr>
 
-<div class="container" style="margin-right:0px ">
+<div class="container">
     <div class="form-group row">
       <label for="estado" class="col-sm-1 col-form-label"><strong>Estado</strong></label>
       <div class="col-sm-11">
@@ -50,9 +50,9 @@
     </div>
 </div>
 
-<hr  style="border: 1px solid; color: #e8e8e8">
+<hr>
 
-<div class="container" style="margin-right:0px ">
+<div class="container">
     <div class="form-group row">
       <label for="municipio" class="col-sm-1 col-form-label"><strong>Busca</strong></label>
       <div class="col-sm-11">
@@ -61,9 +61,9 @@
     </div>
  </div>
 
-<div class="container" style="margin-right:0px ">
-    <div class="py-2" style="display: flex;justify-content: flex-end;">
-        <div class="col-lg-11" style="padding: 0px">
+<div class="container">
+    <div class="py-2">
+        <div class="col-lg-11 padding-0">
             <button type="submit" class="btn btn-success">Buscar</button>
         </div>
     </div>
@@ -74,15 +74,14 @@
     <?php $municipio = null; ?>
   @else
 
-
-<div class="container" style="margin-right:0px ">
-    <div class="py-2" style="display: flex;justify-content: flex-end;">
-       <div class="col-lg-11" style="padding: 0px">
-            <h2>{{$text = count($municipios) > 1 ? count($municipios).' municípios encontrados' : count($municipios). ' município encontrado' }} </h2>
+<div class="container">
+    <div class="py-2" >
+       <div class="col-lg-11 padding-0">
+            <h2>{{$text = $municipios->total() > 1 ? $municipios->total().' municípios encontrados' : $municipios->total(). ' município encontrado' }} </h2>
         </div>
     </div>
     <div class="container py-2">
-        <div class="row "style="display: flex;justify-content: flex-end;">
+        <div class="row">
             <table class="table col-lg-11 table" >
                 <tbody>
                     @foreach ($municipios as $mun)
@@ -95,75 +94,13 @@
         </div>
     </div>
   </div>
+  </div>
+
   @endif
 
 <footer>
-    <small style="font-family: sans-serif;">&copy; 2020 - Mobile Saúde</small>
+    <small>&copy; 2020 - Mobile Saúde</small>
 </footer>
-
-<style>
-    .table td, .table th {
-    padding: .75rem;
-    vertical-align: top;
-    border: 1px solid #dee2e6;
-}
-</style>
-  <script>
-
-
-$.ajax({
-    url: 'http://localhost/desafio_mobile_saude/ibge/public/api/regiao',
-    dataType: 'json',
-    type: 'GET',
-    success: function (data){
-        data.map(data => {
-            $('select#regiao').append('<option value="'+data.id+'" rel="'+data.nome+'"  >'+ data.nome +'</option>')
-        });
-    }
-});
-
-$.ajax({
-    url: 'http://localhost/desafio_mobile_saude/ibge/public/api/municipio',
-    dataType: 'json',
-    type: 'GET',
-    success: function (data){
-    $("select#regiao").change(function(){
-        $('select#municipio').empty();
-        var valor = $('select#estado').val();
-        data.map(data => {
-            if(valor == data.uf)
-            $('select#municipio').append('<option value="'+data.uf+'" rel="'+data.id+'"  >'+ data.nome +'</option>')
-        });
-    });
-
-        $("select#estado").change(function(){
-            $('select#municipio').empty();
-            var valor = $('select#estado').val();
-        data.map(data => {
-            if(valor == data.uf)
-            $('select#municipio').append('<option value="'+data.uf+'" rel="'+data.id+'"  >'+ data.nome +'</option>')
-        });
-    });
-    }
-});
-$.ajax({
-    url: 'http://localhost/desafio_mobile_saude/ibge/public/api/estado',
-    dataType: 'json',
-    type: 'GET',
-    success: function (data){
-    $("select#regiao").change(function(){
-        $('select#estado').empty();
-        var valor = $("select#regiao").val();
-        data.map(data => {
-            if(valor==data.id_regiao)
-            $('select#estado').append('<option value="'+data.uf+'" rel="'+data.id+'"  >'+ data.nome +'</option>')
-        });
-    });
-    }
-});
-</script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="<?= asset('js/app.js'); ?>"></script>
 </body>
 </html>

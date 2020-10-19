@@ -2,20 +2,22 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Regiao;
+use App\Services\RegiaoService;
+use App\Http\Controllers\Controller;
 
 class RegiaoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $regioes = Regiao::all();
+    protected $regiaoService;
+
+	public function __construct(RegiaoService $regiaoService)
+	{
+		$this->regiaoService = $regiaoService;
+    }
+
+    public function index(Request $request){
+        $regioes = $this->regiaoService->listar($request);
+
         return response()->json($regioes);
     }
 }

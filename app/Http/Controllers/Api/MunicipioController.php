@@ -2,20 +2,22 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Municipio;
+use App\Services\MunicipioService;
+use App\Http\Controllers\Controller;
 
 class MunicipioController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $municipios = Municipio::all();
+    protected $municipioService;
+
+	public function __construct(MunicipioService $municipioService)
+	{
+		$this->municipioService = $municipioService;
+    }
+
+    public function index(Request $request){
+
+        $municipios = $this->municipioService->listar($request);
         return response()->json($municipios);
     }
 }

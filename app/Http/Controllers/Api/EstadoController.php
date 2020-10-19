@@ -2,20 +2,22 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Estado;
+use App\Services\EstadoService;
+use App\Http\Controllers\Controller;
 
 class EstadoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $estados = Estado::all();
+    protected $estadoService;
+
+	public function __construct(EstadoService $estadoService)
+	{
+		$this->estadoService = $estadoService;
+    }
+
+    public function index(Request $request){
+        $estados = $this->estadoService->listar($request);
+
         return response()->json($estados);
     }
 }
