@@ -59,11 +59,11 @@ no terminal do vscode ou cmd do windowns.</li>
 </ul>
 </code>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
-
-<code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code>
-<code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code>
-<code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code>
-
+<ol>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
+<ol>
 
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação</h3></p>
 <ol>
