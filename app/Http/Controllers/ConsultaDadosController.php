@@ -10,7 +10,7 @@ class ConsultaDadosController extends Controller
 {
     protected $municipioService;
 
-	public function __construct(municipioService $municipioService)
+	public function __construct(MunicipioService $municipioService)
 	{
 		$this->municipioService = $municipioService;
     }
