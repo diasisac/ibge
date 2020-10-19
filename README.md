@@ -63,7 +63,9 @@ no terminal do vscode ou cmd do windowns.</li>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
 <ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
-    <ul><li>id</li>
+    <ul>
+        Parâmetros
+        <li>id</li>
         <li>nome</li>
     </ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
