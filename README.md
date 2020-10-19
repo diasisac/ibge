@@ -64,14 +64,33 @@ no terminal do vscode ou cmd do windowns.</li>
 <ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
     <ul>
-        <li>Parâmetros</li>
+        <li><strong>Parâmetros</strong></li>
         <ul>
             <li>id</li>
             <li>nome</li>
         </ul>
     </ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
+    <ul>
+        <li><strong>Parâmetros</strong></li>
+        <ul>
+            <li>id</li>
+            <li>codigo</li>
+            <li>nome</li>
+            <li>uf</li>
+            <li>id_regiao</li>
+        </ul>
+    </ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
+    <ul>
+        <li><strong>Parâmetros</strong></li>
+        <ul>
+            <li>id</li>
+            <li>codigo</li>
+            <li>nome</li>
+            <li>uf</li>
+        </ul>
+    </ul>
 </ul>
     
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação</h3></p>
