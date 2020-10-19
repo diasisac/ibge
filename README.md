@@ -48,4 +48,5 @@
 <li>Criar uma pasta chamada desafio_mobile_saude e clonar este repositório dentro dessa pasta.</li>
 <li>Após a clonagem do repositório, é necessário instalar as dependências do projeto e para isso podemos prosseguir com comando <code>composer install</code>
 no terminal do vscode ou cmd do windowns.</li>
+<li>Com a instalação das depêndencias concluída podemos acessar a aplicação com a seguinte url <code>http://localhost/desafio_mobile_saude/ibge/public/<code></li>
 </ol>
