@@ -32,7 +32,7 @@
         <div class="form-group row">
           <label for="regiao" class="col-sm-1 col-form-label"><strong>Região</strong></label>
           <div class="col-sm-11">
-            <select name="regiao" id="regiao" class="form-control ">
+            <select name="regiao" id="regiao" class="form-control">
               <option value="" rel="">Selecione</option>
             </select>
           </div>
@@ -45,7 +45,7 @@
       <div class="form-group row">
         <label for="estado" class="col-sm-1 col-form-label"><strong>Estado</strong></label>
         <div class="col-sm-11">
-          <select name="estado" id="estado" class="form-control ">
+          <select name="estado" id="estado" class="form-control">
           </select>
         </div>
       </div>
