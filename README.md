@@ -52,11 +52,9 @@ no terminal do vscode ou cmd do windowns.</li>
 </ol>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Configurações do banco</h3></p>
 <code>
-<ul>
-<li>DATABASE=ibge</li>
-<li>USERNAME=root</li>
-<li>PASSWORD=</li>
-</ul>
+<span>DATABASE=ibge</span>
+<span>USERNAME=root</span>
+<span>PASSWORD=</span>
 </code>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
 <ul>
