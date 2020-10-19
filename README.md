@@ -1,61 +1,109 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+            
+  <div class="readme file file-markup wiki-content">
+    <p><img alt="mobilesaude.com.br" src="https://www.mobilesaude.com.br/challenge/2018-2/cabecalho.png"></p>
+<h1 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Descrição Challenge Backend Mobile Saúde – 2020-2</h1>
+<p><em>Por: Vinicius Fiorio</em> –  <a href="mailto:vinicius@mobilesaude.com.br" rel="nofollow">vinicius@mobilesaude.com.br</a></p>
+<h3 id="markdown-header-o-que-sera-analisado">O que será analisado?</h3>
+<p>Compreensão do escopo, lógica, organização do projeto e do código, modelagem e manipulação de dados, tecnologias utilizadas, domínio da linguagem e desempenho da aplicação</p>
+<h3 id="markdown-header-entrega">Entrega</h3>
+<p>O código fonte deve ser entregue via e-mail, junto com o dump do banco de dados, o código fonte pode estar compactado ou em algum repositório PRIVADO. Junto ao e-mail deve ser entregue orientações para o deploy da aplicação, além de qualquer outra informação necessária para sua execução. </p>
+<p>Envie a partir do mesmo e-mail incluído no formulário da vaga.</p>
+<h3 id="markdown-header-escopo">Escopo</h3>
+<p>O challenge consiste na criação de uma interface web (responsiva) que busque os municípios do Brasil tendo como base os dados públicos do IBGE. O sistema deve ser capaz de filtrar os municípios por Região e/ou Estado realizando uma busca no nome do município, que deve ser linkada com o site do IBGE.</p>
+<p>O sistema possui 3 módulos principais</p>
+<h4 id="markdown-header-banco-de-dados-mysql-ou-postgresql">Banco de Dados (MySql ou PostgreSQL)</h4>
+<ol>
+<li>Criar banco de dados e publicar com os dados <a href="http://mobilesaude.com.br/challenge/2018-2/challenge_backend_dados_dist.zip" rel="nofollow">CSV - Regiões, estados e municipios</a></li>
+<li>Aplicar técnicas de performance de consultas</li>
+<li>Aplicar técnicas de relacionamento entre tabelas </li>
+</ol>
+<h4 id="markdown-header-api-rest-deve-ser-escrita-em-php-nodejs-ou-java-de-acordo-com-a-vaga-aplicada">API REST (deve ser escrita em PHP, NODE.JS ou JAVA de acordo com a vaga aplicada):</h4>
+<ol>
+<li>Lista de regiões políticas do Brasil;</li>
+<li>Lista todas as UF do Brasil; </li>
+<li>Lista todos os municípios por UF;</li>
+<li>Busca por municípios, estado + busca do usuário;</li>
+<li>Busca por municípios, região + busca do usuário.</li>
+</ol>
+<h4 id="markdown-header-interface-web-preferencialmente-utilizando-bootstrap-4">Interface WEB (preferencialmente utilizando Bootstrap 4):</h4>
+<ol>
+<li>Formulário para busca; </li>
+<li>Combo-box de regiões; </li>
+<li>Combo-box de estados; </li>
+<li>Input de texto para busca; </li>
+<li>Lista com os resultados da busca (que deve ser linkada com o site do IBGE para o usuário buscar mais informações, como no exemplo: <a class="ap-connect-link" href="https://sidra.ibge.gov.br/territorio#/N6/3205309" rel="nofollow">https://sidra.ibge.gov.br/territorio#/N6/3205309</a>); </li>
+</ol>
+<p>É importante que a interface web, seja desacoplada da API que realizará a busca ou que use algum Framework MVC que tenha uma separação clara de funções dos módulos utilizados. </p>
+<hr>
+<h3 id="markdown-header-referencias">Referências</h3>
+<p><a href="http://mobilesaude.com.br/challenge/2018-2/img1.png" rel="nofollow">Resultado da busca: Interface web.png</a></p>
+<p><a href="http://mobilesaude.com.br/challenge/2018-2/img2.png" rel="nofollow">Resultado da mesma busca na API - busca.png</a></p>
+<hr>
+<p><img alt="mobilesaude.com.br" src="https://www.mobilesaude.com.br/challenge/logo-mobilesaude-cor.png"></p>
+<hr>
+<h1 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Parte do desenvolvedor</h1> 
+<p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Instalação do Projeto</h3></p>
+<ol>
+<li>Realizar a instalação de um servidor web WAMP ou XAMPP, se preferir pode ser utilizado o próprio servidor do PHP.</li>
+<li>Criar uma pasta chamada desafio_mobile_saude e clonar este repositório dentro dessa pasta.</li>
+<li>Após a clonagem do repositório, é necessário instalar as dependências do projeto e para isso podemos prosseguir com comando <code>composer install</code>
+no terminal do vscode ou cmd do windowns.</li>
+<li>Com a instalação das depêndencias concluída podemos acessar a aplicação com a seguinte url</li> <code>http://localhost/desafio_mobile_saude/ibge/public/</code>
+</ol>
+<hr>
+<p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Configurações do banco<g-emoji class="g-emoji" alias="wrench" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png">🔧</g-emoji></p></h3></p>
+<ul>
+    <li>
+        DATABASE=ibge 
+    </li>
+    <li>
+        USERNAME=root 
+    </li>
+    <li>
+        Charset=utf8mb4 
+    </li>
+    <li>
+        Collation=utf8mb4_general_ci 
+    </li>
+        
+ </ul>
+ <hr>
+<p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
+<ul>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
+    <ul>
+        <li><strong>Parâmetros</strong></li>
+        <ul>
+            <li>id</li>
+            <li>nome</li>
+        </ul>
+    </ul>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
+    <ul>
+        <li><strong>Parâmetros</strong></li>
+        <ul>
+            <li>id</li>
+            <li>codigo</li>
+            <li>nome</li>
+            <li>uf</li>
+            <li>id_regiao</li>
+        </ul>
+    </ul>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
+    <ul>
+        <li><strong>Parâmetros</strong></li>
+        <ul>
+            <li>id</li>
+            <li>codigo</li>
+            <li>nome</li>
+            <li>uf</li>
+        </ul>
+    </ul>
+</ul>
+<hr>
+<p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação<g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji></p></h3>
+<ul>
+<li>O campo região precisa ser selecionado primeiro para que o select de estados seja montado dinamicamente.</li>
+<li>Para efetuar a busca o select de região e estado precisam ser preenchidos.</li>
+</ul>
+<hr>
