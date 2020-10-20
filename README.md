@@ -110,3 +110,85 @@ no terminal do vscode ou cmd do windowns.</li>
 <li>A busca pode ser feita selecionando a região, e informando o município</li>
 </ul>
 <hr>
+
+<table class="table table-striped table-hover table-condensed table-bordered">
+  <thead>
+    <tr>
+      <th colspan="4" class="text-center bg-ddd">PARÂMETROS DE ENTRADA</th>
+    </tr>
+    <tr>
+      <th width="15%">Parâmetro</th>
+      <th width="15%">Tipo</th>
+      <th width="15%">Obrigatoriedade</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tipo</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>Tipo de contratação</td>
+    </tr>
+    <tr>
+      <td>numero</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>Número do contrato</td>
+    </tr>
+    <tr>
+      <td>ano</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>Ano do contrato</td>
+    </tr>
+    <tr>
+      <td>entidade</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>ID da entidade (Unidade Gestora)</td>
+    </tr>
+    <tr>
+      <td>modalidade</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>ID da modalidade licitatória</td>
+    </tr>
+    <tr>
+      <td>situacao</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>ID da situação</td>
+    </tr>
+    <tr>
+      <td>data_inicio</td>
+      <td>data</td>
+      <td>Opcional</td>
+      <td>Data inicial da delimitação temporal da consulta, formato <em>dd/mm/aaaa</em></td>
+    </tr>
+    <tr>
+      <td>data_fim</td>
+      <td>data</td>
+      <td>Opcional</td>
+      <td>Data final da delimitação temporal da consulta, formato <em>dd/mm/aaaa</em></td>
+    </tr>
+    <tr>
+      <td>categoria</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>ID da categoria</td>
+    </tr>
+    <tr>
+      <td>busca</td>
+      <td>string</td>
+      <td>Opcional</td>
+      <td>Busca geral</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>ID do registro a ser retornado</td>
+    </tr>
+  </tbody>
+</table>
