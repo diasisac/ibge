@@ -103,7 +103,10 @@ no terminal do vscode ou cmd do windowns.</li>
 <hr>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação<g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji></p></h3>
 <ul>
-<li>O campo região precisa ser selecionado primeiro para que o select de estados seja montado dinamicamente.</li>
-<li>Para efetuar a busca o select de região e estado precisam ser preenchidos.</li>
+<li>A busca pode ser feita sem selecionar nenhuma região, nenhum estado e nenhum município, retornará todos os municípios</li>
+<li>A busca pode ser feita selecionando apenas a região, retornará os municípios baseado na região selecionada</li>
+<li>A busca pode ser feita selecionando a região e o estado, retornará os municípios baseado na região e estado selecionados</li>
+<li>A busca pode ser feita selecionando a região, estado e informando o município</li>
+<li>A busca pode ser feita selecionando a região, e informando o município</li>
 </ul>
 <hr>
