@@ -106,7 +106,6 @@ no terminal do vscode ou cmd do windowns.</li>
 <li>A busca pode ser feita selecionando apenas a região</li>
 <li>A busca pode ser feita selecionando a região e o estado</li>
 <li>A busca pode ser feita selecionando a região, estado e informando o município</li>
-<li>A busca pode ser feita selecionando a região, estado</li>
 <li>A busca pode ser feita selecionando a região, e informando o município</li>
 </ul>
 <hr>
