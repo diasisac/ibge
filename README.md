@@ -98,7 +98,52 @@ no terminal do vscode ou cmd do windowns.</li>
     </tr>
   </tbody>
 </table>
-<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
+  <p><li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li></p>
+      <table class="table table-striped table-hover table-condensed table-bordered">
+  <thead>
+    <tr>
+      <th colspan="4" class="text-center bg-ddd">PARÂMETROS DE ENTRADA</th>
+    </tr>
+    <tr>
+      <th width="15%">Parâmetro</th>
+      <th width="15%">Tipo</th>
+      <th width="15%">Obrigatoriedade</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>Id do Estado</td>
+    </tr>
+    <tr>
+      <td>codigo</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>Código do Estado</td>
+    </tr>
+    <tr>
+      <td>nome</td>
+      <td>string</td>
+      <td>Opcional</td>
+      <td>Nome do estado</td>
+    </tr>
+    <tr>
+      <td>uf</td>
+      <td>string</td>
+      <td>Opcional</td>
+      <td>uf do estado</td>
+    </tr>
+    <tr>
+      <td>id_regiao</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>Id da região</td>
+    </tr>
+  </tbody>
+</table>
     <ul>
         <li><strong>Parâmetros</strong></li>
         <ul>
