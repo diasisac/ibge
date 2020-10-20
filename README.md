@@ -46,7 +46,7 @@
 <ol>
 <li>Realizar a instalação de um servidor web WAMP ou XAMPP, se preferir pode ser utilizado o próprio servidor do PHP.</li>
 <li>Criar uma pasta chamada desafio_mobile_saude e clonar este repositório dentro dessa pasta.</li>
-<li>Após a clonagem do repositório, é necessário instalar as dependências do projeto e para isso podemos prosseguir com comando <code>composer install</code> acessar o diretório do projeto EXEMPLO: <code>C:\xampp\htdocs\desafio_mobile_saude\ibge dentro da pasta do projeto</code></li>
+<li>Após a clonagem do repositório, é necessário instalar as dependências do projeto e para isso podemos prosseguir com comando <code>composer install</code> dentro do diretório do projeto EXEMPLO: <code>C:\xampp\htdocs\desafio_mobile_saude\ibge dentro da pasta do projeto</code></li>
 <li>Com a instalação das depêndencias concluída podemos acessar a aplicação com a seguinte url</li> <code>http://localhost/desafio_mobile_saude/ibge/public/</code>
 </ol>
 <hr>
