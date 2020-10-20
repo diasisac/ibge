@@ -144,7 +144,7 @@ no terminal do vscode ou cmd do windowns.</li>
     </tr>
   </tbody>
 </table>
-<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
+  <p><li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li></p>
  <table class="table table-striped table-hover table-condensed table-bordered">
   <thead>
     <tr>
