@@ -70,7 +70,7 @@ no terminal do vscode ou cmd do windowns.</li>
  <hr>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
 <ul>
-<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
+<p><li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li></p>
   <table class="table table-striped table-hover table-condensed table-bordered">
   <thead>
     <tr>
@@ -85,70 +85,16 @@ no terminal do vscode ou cmd do windowns.</li>
   </thead>
   <tbody>
     <tr>
-      <td>tipo</td>
+      <td>id</td>
       <td>inteiro</td>
       <td>Opcional</td>
       <td>Tipo de contratação</td>
     </tr>
     <tr>
-      <td>numero</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>Número do contrato</td>
-    </tr>
-    <tr>
-      <td>ano</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>Ano do contrato</td>
-    </tr>
-    <tr>
-      <td>entidade</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>ID da entidade (Unidade Gestora)</td>
-    </tr>
-    <tr>
-      <td>modalidade</td>
+      <td>nome</td>
       <td>inteiro</td>
       <td>Opcional</td>
       <td>ID da modalidade licitatória</td>
-    </tr>
-    <tr>
-      <td>situacao</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>ID da situação</td>
-    </tr>
-    <tr>
-      <td>data_inicio</td>
-      <td>data</td>
-      <td>Opcional</td>
-      <td>Data inicial da delimitação temporal da consulta, formato <em>dd/mm/aaaa</em></td>
-    </tr>
-    <tr>
-      <td>data_fim</td>
-      <td>data</td>
-      <td>Opcional</td>
-      <td>Data final da delimitação temporal da consulta, formato <em>dd/mm/aaaa</em></td>
-    </tr>
-    <tr>
-      <td>categoria</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>ID da categoria</td>
-    </tr>
-    <tr>
-      <td>busca</td>
-      <td>string</td>
-      <td>Opcional</td>
-      <td>Busca geral</td>
-    </tr>
-    <tr>
-      <td>id</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>ID do registro a ser retornado</td>
     </tr>
   </tbody>
 </table>
