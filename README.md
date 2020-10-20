@@ -88,13 +88,13 @@ no terminal do vscode ou cmd do windowns.</li>
       <td>id</td>
       <td>inteiro</td>
       <td>Opcional</td>
-      <td>Tipo de contratação</td>
+      <td>Id da região</td>
     </tr>
     <tr>
       <td>nome</td>
       <td>inteiro</td>
       <td>Opcional</td>
-      <td>ID da modalidade licitatória</td>
+      <td>Nome da região</td>
     </tr>
   </tbody>
 </table>
@@ -168,71 +168,29 @@ no terminal do vscode ou cmd do windowns.</li>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>tipo</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>Tipo de contratação</td>
-    </tr>
-    <tr>
-      <td>numero</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>Número do contrato</td>
-    </tr>
-    <tr>
-      <td>ano</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>Ano do contrato</td>
-    </tr>
-    <tr>
-      <td>entidade</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>ID da entidade (Unidade Gestora)</td>
-    </tr>
-    <tr>
-      <td>modalidade</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>ID da modalidade licitatória</td>
-    </tr>
-    <tr>
-      <td>situacao</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>ID da situação</td>
-    </tr>
-    <tr>
-      <td>data_inicio</td>
-      <td>data</td>
-      <td>Opcional</td>
-      <td>Data inicial da delimitação temporal da consulta, formato <em>dd/mm/aaaa</em></td>
-    </tr>
-    <tr>
-      <td>data_fim</td>
-      <td>data</td>
-      <td>Opcional</td>
-      <td>Data final da delimitação temporal da consulta, formato <em>dd/mm/aaaa</em></td>
-    </tr>
-    <tr>
-      <td>categoria</td>
-      <td>inteiro</td>
-      <td>Opcional</td>
-      <td>ID da categoria</td>
-    </tr>
-    <tr>
-      <td>busca</td>
-      <td>string</td>
-      <td>Opcional</td>
-      <td>Busca geral</td>
-    </tr>
-    <tr>
+      <tr>
       <td>id</td>
       <td>inteiro</td>
       <td>Opcional</td>
-      <td>ID do registro a ser retornado</td>
+      <td>Id do Estado</td>
+    </tr>
+    <tr>
+      <td>codigo</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>Código do Estado</td>
+    </tr>
+    <tr>
+      <td>nome</td>
+      <td>string</td>
+      <td>Opcional</td>
+      <td>Nome do estado</td>
+    </tr>
+    <tr>
+      <td>uf</td>
+      <td>string</td>
+      <td>Opcional</td>
+      <td>uf do estado</td>
     </tr>
   </tbody>
 </table>
