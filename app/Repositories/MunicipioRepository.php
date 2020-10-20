@@ -41,7 +41,7 @@ class MunicipioRepository
         $municipio->where('uf', $request->estado);
     }
 
-    if ($request->has('regiao') && empty($request->estado) ) {
+    if ($request->has('regiao') && empty($request->estado) && !empty($request->regiao) ) {
         $uf_estado=[];
         foreach($estado as $est){
             $uf_estado[] = $est->uf;
