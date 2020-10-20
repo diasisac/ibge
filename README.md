@@ -71,47 +71,7 @@ no terminal do vscode ou cmd do windowns.</li>
 <p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Endpoints</h3></p>
 <ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/regiao</code></li>
-    <ul>
-        <li><strong>Parâmetros</strong></li>
-        <ul>
-            <li>id</li>
-            <li>nome</li>
-        </ul>
-    </ul>
-<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
-    <ul>
-        <li><strong>Parâmetros</strong></li>
-        <ul>
-            <li>id</li>
-            <li>codigo</li>
-            <li>nome</li>
-            <li>uf</li>
-            <li>id_regiao</li>
-        </ul>
-    </ul>
-<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
-    <ul>
-        <li><strong>Parâmetros</strong></li>
-        <ul>
-            <li>id</li>
-            <li>codigo</li>
-            <li>nome</li>
-            <li>uf</li>
-        </ul>
-    </ul>
-</ul>
-<hr>
-<p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação<g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji></p></h3>
-<ul>
-<li>A busca pode ser feita sem selecionar nenhuma região, nenhum estado e nenhum município, retornará todos os municípios</li>
-<li>A busca pode ser feita selecionando apenas a região, retornará os municípios baseado na região selecionada</li>
-<li>A busca pode ser feita selecionando a região e o estado, retornará os municípios baseado na região e estado selecionados</li>
-<li>A busca pode ser feita selecionando a região, estado e informando o município</li>
-<li>A busca pode ser feita selecionando a região, e informando o município</li>
-</ul>
-<hr>
-
-<table class="table table-striped table-hover table-condensed table-bordered">
+  <table class="table table-striped table-hover table-condensed table-bordered">
   <thead>
     <tr>
       <th colspan="4" class="text-center bg-ddd">PARÂMETROS DE ENTRADA</th>
@@ -192,3 +152,108 @@ no terminal do vscode ou cmd do windowns.</li>
     </tr>
   </tbody>
 </table>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/estado</code></li>
+    <ul>
+        <li><strong>Parâmetros</strong></li>
+        <ul>
+            <li>id</li>
+            <li>codigo</li>
+            <li>nome</li>
+            <li>uf</li>
+            <li>id_regiao</li>
+        </ul>
+    </ul>
+<li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
+ <table class="table table-striped table-hover table-condensed table-bordered">
+  <thead>
+    <tr>
+      <th colspan="4" class="text-center bg-ddd">PARÂMETROS DE ENTRADA</th>
+    </tr>
+    <tr>
+      <th width="15%">Parâmetro</th>
+      <th width="15%">Tipo</th>
+      <th width="15%">Obrigatoriedade</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tipo</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>Tipo de contratação</td>
+    </tr>
+    <tr>
+      <td>numero</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>Número do contrato</td>
+    </tr>
+    <tr>
+      <td>ano</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>Ano do contrato</td>
+    </tr>
+    <tr>
+      <td>entidade</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>ID da entidade (Unidade Gestora)</td>
+    </tr>
+    <tr>
+      <td>modalidade</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>ID da modalidade licitatória</td>
+    </tr>
+    <tr>
+      <td>situacao</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>ID da situação</td>
+    </tr>
+    <tr>
+      <td>data_inicio</td>
+      <td>data</td>
+      <td>Opcional</td>
+      <td>Data inicial da delimitação temporal da consulta, formato <em>dd/mm/aaaa</em></td>
+    </tr>
+    <tr>
+      <td>data_fim</td>
+      <td>data</td>
+      <td>Opcional</td>
+      <td>Data final da delimitação temporal da consulta, formato <em>dd/mm/aaaa</em></td>
+    </tr>
+    <tr>
+      <td>categoria</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>ID da categoria</td>
+    </tr>
+    <tr>
+      <td>busca</td>
+      <td>string</td>
+      <td>Opcional</td>
+      <td>Busca geral</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>inteiro</td>
+      <td>Opcional</td>
+      <td>ID do registro a ser retornado</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p><h3 id="markdown-header-descricao-challenge-backend-mobile-saude-2020-2">Regras da aplicação<g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji></p></h3>
+<ul>
+<li>A busca pode ser feita sem selecionar nenhuma região, nenhum estado e nenhum município, retornará todos os municípios</li>
+<li>A busca pode ser feita selecionando apenas a região, retornará os municípios baseado na região selecionada</li>
+<li>A busca pode ser feita selecionando a região e o estado, retornará os municípios baseado na região e estado selecionados</li>
+<li>A busca pode ser feita selecionando a região, estado e informando o município</li>
+<li>A busca pode ser feita selecionando a região, e informando o município</li>
+</ul>
+<hr>
+
+
