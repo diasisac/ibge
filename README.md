@@ -134,7 +134,7 @@ no terminal do vscode ou cmd do windowns.</li>
       <td>uf</td>
       <td>string</td>
       <td>Opcional</td>
-      <td>uf do estado</td>
+      <td>Uf do estado</td>
     </tr>
     <tr>
       <td>id_regiao</td>
@@ -144,16 +144,6 @@ no terminal do vscode ou cmd do windowns.</li>
     </tr>
   </tbody>
 </table>
-    <ul>
-        <li><strong>Parâmetros</strong></li>
-        <ul>
-            <li>id</li>
-            <li>codigo</li>
-            <li>nome</li>
-            <li>uf</li>
-            <li>id_regiao</li>
-        </ul>
-    </ul>
 <li><code>http://localhost/desafio_mobile_saude/ibge/public/api/municipio</code></li>
  <table class="table table-striped table-hover table-condensed table-bordered">
   <thead>
@@ -190,7 +180,7 @@ no terminal do vscode ou cmd do windowns.</li>
       <td>uf</td>
       <td>string</td>
       <td>Opcional</td>
-      <td>uf do estado</td>
+      <td>Uf do estado</td>
     </tr>
   </tbody>
 </table>
