@@ -115,13 +115,13 @@
       <td>id</td>
       <td>inteiro</td>
       <td>Opcional</td>
-      <td>Id do Estado</td>
+      <td>Id do estado</td>
     </tr>
     <tr>
       <td>codigo</td>
       <td>inteiro</td>
       <td>Opcional</td>
-      <td>Código do Estado</td>
+      <td>Código do estado</td>
     </tr>
     <tr>
       <td>nome</td>
@@ -139,7 +139,7 @@
       <td>id_regiao</td>
       <td>inteiro</td>
       <td>Opcional</td>
-      <td>Id da região</td>
+      <td>Id da estado</td>
     </tr>
   </tbody>
 </table>
@@ -161,25 +161,25 @@
       <td>id</td>
       <td>inteiro</td>
       <td>Opcional</td>
-      <td>Id do Município</td>
+      <td>Id do município</td>
     </tr>
     <tr>
       <td>codigo</td>
       <td>inteiro</td>
       <td>Opcional</td>
-      <td>Código do Município</td>
+      <td>Código do município</td>
     </tr>
     <tr>
       <td>nome</td>
       <td>string</td>
       <td>Opcional</td>
-      <td>Nome do Município</td>
+      <td>Nome do município</td>
     </tr>
     <tr>
       <td>uf</td>
       <td>string</td>
       <td>Opcional</td>
-      <td>Uf do Município</td>
+      <td>Uf do município</td>
     </tr>
   </tbody>
 </table>
