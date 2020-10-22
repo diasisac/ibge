@@ -161,25 +161,25 @@
       <td>id</td>
       <td>inteiro</td>
       <td>Opcional</td>
-      <td>Id do Estado</td>
+      <td>Id do Município</td>
     </tr>
     <tr>
       <td>codigo</td>
       <td>inteiro</td>
       <td>Opcional</td>
-      <td>Código do Estado</td>
+      <td>Código do Município</td>
     </tr>
     <tr>
       <td>nome</td>
       <td>string</td>
       <td>Opcional</td>
-      <td>Nome do estado</td>
+      <td>Nome do Município</td>
     </tr>
     <tr>
       <td>uf</td>
       <td>string</td>
       <td>Opcional</td>
-      <td>Uf do estado</td>
+      <td>Uf do Município</td>
     </tr>
   </tbody>
 </table>
